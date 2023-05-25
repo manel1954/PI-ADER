@@ -16,7 +16,7 @@ MARRON="\33[38;5;138m"
                         cd /home/pi/PI-ADER                       
                         git pull
 
-
+sleep 5
 
 
 
