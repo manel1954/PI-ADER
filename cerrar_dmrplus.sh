@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo killall MMDVMPLUS
 cd /home/pi/Desktop
-sudo cp Abrir_MMDVMPLUS.desktop /home/pi
+sudo cp Abrir_dmrplus.desktop /home/pi
 
 sed -i "4c Exec=sh -c 'cd /home/pi/PI-ADER;sh ejecutar_dmrplus.sh'" /home/pi/Abrir_dmrplus.desktop
 sed -i "5c Icon=/home/pi/PI-ADER/ICO_DMRPLUS_OFF.png" /home/pi/Abrir_dmrplus.desktop
