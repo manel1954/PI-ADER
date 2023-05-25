@@ -1,6 +1,6 @@
 #!/bin/bash
 
-killall qt_editor_dmrplus
+#killall qt_editor_dmrplus
 
 mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMPLUS.ini`
 buscar=":"
