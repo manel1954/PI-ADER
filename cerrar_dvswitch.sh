@@ -21,8 +21,8 @@ sudo systemctl stop p25gateway.service
 
 
 
-#zenity --info --ok-label= --title=DVSWITCH --window-icon=/home/pi/A110/ICONO_DVSWITCH_OFF.png --width=400 --timeout=5 --text "\n\n\nDVSWITCH DESACTIVADO"
+#zenity --info --ok-label= --title=DVSWITCH --window-icon=/home/pi/PI-ADER/ICONO_DVSWITCH_OFF.png --width=400 --timeout=5 --text "\n\n\nDVSWITCH DESACTIVADO"
 sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
-/home/pi/A110/./qt_dvswitch_desactivado
+/home/pi/PI-ADER/./qt_dvswitch_desactivado
 
 

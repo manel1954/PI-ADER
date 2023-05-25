@@ -70,7 +70,7 @@ sudo systemctl stop ircddbgateway.service
 
 # Ejecuta Solo D-STAR
 cd /home/pi/MMDVMHost
-#/home/pi/A110/./qt_info_solodstar & sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
+#/home/pi/PI-ADER/./qt_info_solodstar & sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 xterm -geometry 88x17+1274+665 -bg black -fg green -fa ‘verdana’ -fs 9x -T CONSOLA_SOLO_DSTAR -e sudo ./MMDVMDSTAR MMDVMDSTAR.ini & sudo ircddbgateway -gui
 # Cierra el icono Abrir Solo Dstar si no hay conexión 
 cd /home/pi/Desktop

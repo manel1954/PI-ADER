@@ -38,17 +38,17 @@ echo "                    NO TIENES INTERNET Y NO  SE VA A ACTUALIZAR           
 echo "***************************************************************************************"
 echo "${VERDE}PULSA ENTER PARA SALIR"
 read a
-sh /home/pi/A110/ejecutar_ImagenActualizada.sh &
+sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
 else
 {
                         clear
                         echo "${AMARILLO}"                        
-                        cd /home/pi/A110                       
+                        cd /home/pi/PI-ADER                       
                         git pull
-                        sh /home/pi/A110/ejecutar_ImagenActualizada.sh &
+                        sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
                         sleep 3
-                        mv qt_* /home/pi/A110/qt
-                        chmod 777 -R /home/pi/A110/qt
+                        mv qt_* /home/pi/PI-ADER/qt
+                        chmod 777 -R /home/pi/PI-ADER/qt
 
 }
 

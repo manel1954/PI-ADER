@@ -1,13 +1,13 @@
 #!/bin/bash
 cd /var/www/html/upload/files
 
-cp Copia_A110.zip /home/pi/.local/COPIA_SEGURIDAD
+cp Copia_PI-ADER.zip /home/pi/.local/COPIA_SEGURIDAD
 
 sudo rm -R /home/pi/.local/COPIA_SEGURIDAD/Dowloads
 cd /home/pi/.local/COPIA_SEGURIDAD
-tar -xvzf Copia_A110.zip
+tar -xvzf Copia_PI-ADER.zip
 
-sudo rm Copia_A110.zip
+sudo rm Copia_PI-ADER.zip
 echo "\33[1;32m" #color verde   
 echo "***************************************************"
 echo "* ESTAS RESTAURANDO UNA COPIA DE LA MISMA VERSIÓN *"

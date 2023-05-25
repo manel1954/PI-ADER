@@ -1,4 +1,4 @@
 #!/bin/bash                       
 
-                        cd /home/pi/A110
+                        cd /home/pi/PI-ADER
                         mono ImagenActualizada.exe

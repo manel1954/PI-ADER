@@ -2,8 +2,8 @@
 
 cd /home/pi/Desktop
 cp ABRIR_DMR2M17.desktop /home/pi
-sed -i "6c Exec=sh -c 'cd /home/pi/A110; sudo sh cerrar_DMR2M17.sh'" /home/pi/ABRIR_DMR2M17.desktop
-sed -i "7c Icon=/home/pi/A110/ICO_DMR2M17_ON.png" /home/pi/ABRIR_DMR2M17.desktop
+sed -i "6c Exec=sh -c 'cd /home/pi/PI-ADER; sudo sh cerrar_DMR2M17.sh'" /home/pi/ABRIR_DMR2M17.desktop
+sed -i "7c Icon=/home/pi/PI-ADER/ICO_DMR2M17_ON.png" /home/pi/ABRIR_DMR2M17.desktop
 sed -i "4c Name[es_ES]=Cerrar DMR2M17" /home/pi/ABRIR_DMR2M17.desktop
 sed -i "21c DMR2M17=ON" /home/pi/status.ini
 cd /home/pi

@@ -102,7 +102,7 @@ read a
 
                         
 
-                        cp /home/pi/A110/Config_librekit.h /home/pi/MMDVM_HS/Config.h
+                        cp /home/pi/PI-ADER/Config_librekit.h /home/pi/MMDVM_HS/Config.h
                         make clean
                         make bl
                         fi

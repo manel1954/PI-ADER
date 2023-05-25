@@ -183,6 +183,6 @@ sudo cp -f /home/pi/info.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
 # ESTAS LINEAS ESTAN EN CREAR COPIA DESDE LA WEB
 #cd /home/pi/.local/COPIA_SEGURIDAD
-#tar -zcvf Copia_A110.zip Downloads
-#cp  Copia_A110.zip /var/www/html/upload/files
-#sudo Copia_A110.zip
+#tar -zcvf Copia_PI-ADER.zip Downloads
+#cp  Copia_PI-ADER.zip /var/www/html/upload/files
+#sudo Copia_PI-ADER.zip

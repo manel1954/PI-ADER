@@ -27,10 +27,10 @@ fi
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
-SCRIPTS_version="A110"
+SCRIPTS_version="PI-ADER"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
 
-version="A110"
+version="PI-ADER"
 version=$version$actualizacion
 
 #pone todos los status de inicio en OFF
@@ -243,6 +243,6 @@ rm $usuario/RXF_DMRGATEWAY.desktop
 sudo chmod 777 -R $usuario/Desktop
 sleep 2
 
-sudo rm /home/pi/A110/Desktop/st-data
+sudo rm /home/pi/PI-ADER/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
 

@@ -56,7 +56,7 @@ sudo cp hblink-SAMPLE.cfg hblink.cfg
 sudo cp rules-SAMPLE.py rules.py
 
 #Autostart HBLink:
-sudo cp /home/pi/A110/hblink.service /lib/systemd/system/
+sudo cp /home/pi/PI-ADER/hblink.service /lib/systemd/system/
 
 sudo systemctl daemon-reload
 sudo systemctl enable hblink
@@ -68,7 +68,7 @@ sudo chmod +x playback.py
 sudo mkdir /var/log/hblink
 
 #Crear servicio para el parrot /lib/systemd/system/parrot.service 
-sudo cp /home/pi/A110/parrot.service /lib/systemd/system/
+sudo cp /home/pi/PI-ADER/parrot.service /lib/systemd/system/
 
 sudo systemctl enable parrot.service
 sudo systemctl start parrot.service
@@ -96,15 +96,15 @@ sudo cp config_SAMPLE.py config.py
 #sudo nano /opt/HBmonitor/config.py
 
 sleep 2
-sudo cp /home/pi/A110/hblink.cfg /opt/HBlink3/
-sudo cp /home/pi/A110/rules.py /opt/HBlink3/
-sudo cp /home/pi/A110/playback.cfg /opt/HBlink3/
-sudo cp /home/pi/A110/index_template.html /opt/HBmonitor/
-sudo cp /home/pi/A110/config.py /opt/HBmonitor/
-sudo cp /home/pi/A110/monitor.py /opt/HBmonitor/
-sudo cp /home/pi/A110/bridge_table.html /opt/HBmonitor/templates/
-sudo cp /home/pi/A110/hblink_table.html /opt/HBmonitor/templates/
-sudo cp /home/pi/A110/lastheard.html /opt/HBmonitor/templates/
+sudo cp /home/pi/PI-ADER/hblink.cfg /opt/HBlink3/
+sudo cp /home/pi/PI-ADER/rules.py /opt/HBlink3/
+sudo cp /home/pi/PI-ADER/playback.cfg /opt/HBlink3/
+sudo cp /home/pi/PI-ADER/index_template.html /opt/HBmonitor/
+sudo cp /home/pi/PI-ADER/config.py /opt/HBmonitor/
+sudo cp /home/pi/PI-ADER/monitor.py /opt/HBmonitor/
+sudo cp /home/pi/PI-ADER/bridge_table.html /opt/HBmonitor/templates/
+sudo cp /home/pi/PI-ADER/hblink_table.html /opt/HBmonitor/templates/
+sudo cp /home/pi/PI-ADER/lastheard.html /opt/HBmonitor/templates/
 
                         # modificacion 26-01-2022
                         #cd /home/pi/.local
