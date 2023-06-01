@@ -40,17 +40,16 @@ sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 cd /home/pi/MMDVMHost
 xterm -geometry 88x17+22+665 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_DMR+ -e sudo ./MMDVMPLUS MMDVMPLUS.ini
 
-## si no se abre el DMR+, se cierra la nextion virtual 
-#sudo killall qt_callsign_log
-#
-#cd /home/pi/Desktop
-#sudo cp Abrir_MMDVMPLUS.desktop /home/pi
-#sudo sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sh ejecutar_dmrplus.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
-#sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICO_DMRPLUS_OFF.png" /home/pi/Abrir_MMDVMPLUS.desktop
-#sudo sed -i "10c Name[es_ES]=Abrir DMR+" /home/pi/Abrir_MMDVMPLUS.desktop
-#sudo sed -i "6c MMDVMPLUS=OFF" /home/pi/status.ini
-#cd /home/pi
-#sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
-#sleep 1
-#sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
-#
+# si no se abre el DMR+, se cierra la nextion virtual 
+sudo killall qt_callsign_log
+
+cd /home/pi/Desktop
+sudo cp Abrir_MMDVMPLUS.desktop /home/pi
+sudo sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sh ejecutar_dmrplus.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
+sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICO_DMRPLUS_OFF.png" /home/pi/Abrir_MMDVMPLUS.desktop
+sudo sed -i "10c Name[es_ES]=Abrir DMR+" /home/pi/Abrir_MMDVMPLUS.desktop
+sudo sed -i "6c MMDVMPLUS=OFF" /home/pi/status.ini
+cd /home/pi
+sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
+sleep 1
+sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
