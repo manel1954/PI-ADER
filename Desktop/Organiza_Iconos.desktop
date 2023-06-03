@@ -2,7 +2,7 @@
 Version=1.0
 Type=Application
 Name=Organizar Iconos
-Exec=sh -c 'cd /home/pi/PI-ADER; xterm -geometry 87x6+649+136 -bg black -fg grey -fa ‘verdana’ -fs 12x -T COLOCA_ICONOS -e sh colocar_iconos.sh'
+Exec=sh -c 'cd /home/pi/PI-ADER; xterm -geometry 77x6+649+136 -bg black -fg grey -fa ‘verdana’ -fs 16x -T ORGANIZANDO_ICONOS -e sh colocar_iconos.sh'
 Comment=Organiza iconos
 Icon=/home/pi/PI-ADER/ICO_ORGANIZAR_ICONOS.png
 Path=/home/pi/PI-ADER
