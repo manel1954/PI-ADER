@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo killall MMDVMBM
+sudo killall -9 MMDVMBM
 
 mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMBM.ini`
 buscar=":"
