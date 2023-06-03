@@ -16,7 +16,7 @@ echo "colocando iconos"
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
 cp /home/pi/PI-ADER/Desktop/*.* /home/pi/Desktop
 #sudo chmod 777 -R /home/pi/Desktop
-
+sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
 
 # AÑADIDO PROVISIONALMENTE
 # sh clonando_carpeta_qt.sh
