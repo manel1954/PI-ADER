@@ -1,5 +1,16 @@
 #!/bin/bash
-
+#Colores
+ROJO="\033[1;31m"
+VERDE="\033[1;32m"
+BLANCO="\033[1;37m"
+AMARILLO="\033[1;33m"
+CIAN="\033[1;36m"
+GRIS="\033[0m"
+MARRON="\33[38;5;138m"
+NEGRO="\33[0;30m"
+clear
+echo ""
+echo -n "${AMARILLO}"
 # recupera los iconos pero no los que se han quedado con e icono de un libro
 # y quita los semaforos que se queden encendidos por error al reiniciar
 #cp /home/pi/Desktop/*.desktop /home/pi
@@ -11,12 +22,12 @@
 #cp /home/pi/*.desktop /home/pi/Desktop
 #sudo rm /home/pi/*.desktop
 #sudo chmod 777 -R /home/pi/Desktop
-echo "colocando iconos"
+echo "Esperar a que reorganicen los iconos"
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
 cp /home/pi/PI-ADER/Desktop/*.* /home/pi/Desktop
 #sudo chmod 777 -R /home/pi/Desktop
-sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
+
 
 # AÑADIDO PROVISIONALMENTE
 # sh clonando_carpeta_qt.sh
