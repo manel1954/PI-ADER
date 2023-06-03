@@ -38,7 +38,7 @@ sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 
 cd /home/pi/MMDVMHost
-xterm -geometry 88x12+22+656 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_DMR+ -e sudo ./MMDVMPLUS MMDVMPLUS.ini
+xterm -geometry 88x12+22+650 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_DMR+ -e sudo ./MMDVMPLUS MMDVMPLUS.ini
 
 # si no se abre el DMR+, se cierra la nextion virtual 
 sudo killall qt_callsign_log
