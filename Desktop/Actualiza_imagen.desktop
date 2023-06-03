@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/PI-ADER; xterm -geometry 74x6+649+136 -bg black -fg grey -fa ‘verdana’ -fs 9x -T ACTUALIZANDO_IMAGEN -e sh actualiza_imagen.sh'
+Exec=sh -c 'cd /home/pi/PI-ADER; xterm -geometry 73x6+649+136 -bg black -fg grey -fa ‘verdana’ -fs 9x -T ACTUALIZANDO_IMAGEN -e sh actualiza_imagen.sh'
 Icon=/home/pi/PI-ADER/ICO_ACTUALIZAR_IMAGEN.png
 Type=Application
 StartupNotify=false
