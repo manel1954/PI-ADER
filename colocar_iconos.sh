@@ -34,7 +34,6 @@ sudo chmod 777 -R /home/pi/Escritorio
 
 
 
-#cp /home/pi/icons.screen0-1904x1064.rc /home/pi/.config/xfce4/desktop
+cp /home/pi/icons.screen0-1904x1064.rc /home/pi/.config/xfce4/desktop
 
-cp /home/pi/icons.screen0-1904x1032.rc /home/pi/.config/xfce4/desktop
 xfdesktop --reload                              
