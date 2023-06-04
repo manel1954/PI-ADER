@@ -4,11 +4,11 @@
                     sudo rm -r /home/pi/MMDVMHost
                     sudo apt-get install build-essential git-core libi2c-dev i2c-tools lm-sensors
                     git clone https://github.com/g4klx/MMDVMHost
-                    cd MMDVMHost
-                    git clone https://github.com/hallard/ArduiPi_OLED
-                    cd ArduiPi_OLED
-                    sudo make clean
-                    sudo make
+                    #cd MMDVMHost
+                    #git clone https://github.com/hallard/ArduiPi_OLED
+                    #cd ArduiPi_OLED
+                    #sudo make clean
+                    #sudo make
                                     
                     cd /home/pi/MMDVMHost
 
@@ -20,8 +20,10 @@
                     
                     sed -i "22c $FIJA$HOY1$PUNTO" /home/pi/MMDVMHost/Version.h
 
-                    make clean
-                    make -f Makefile.Pi.OLED
+make
+sudo make install
+                    #make clean
+                    #make -f Makefile.Pi.OLED
 
                     #Instala la secion [NextionDriver] en todos los .ini y todas sus memorias
                     #cd /home/pi/NextionDriverInstaller
