@@ -14,7 +14,7 @@
 
                     HOY=$(date +%Y%m%d)
                     FIJA="const char* VERSION = "\"
-                    PI="ADER110"\"
+                    PI="PI-ADER"\"
                     HOY1=$HOY$PI
                     PUNTO=";"   
                     
@@ -24,9 +24,9 @@
                     make -f Makefile.Pi.OLED
 
                     #Instala la secion [NextionDriver] en todos los .ini y todas sus memorias
-                    cd /home/pi/NextionDriverInstaller
-                    sudo ./NextionDriver_ConvertConfig /home/pi/MMDVMHost/MMDVM.ini
-                    sleep 2                  
+                    #cd /home/pi/NextionDriverInstaller
+                    #sudo ./NextionDriver_ConvertConfig /home/pi/MMDVMHost/MMDVM.ini
+                    #sleep 2                  
                     
                     sed -i "5c Duplex=0" /home/pi/MMDVMHost/MMDVM.ini
                     sed -i "52c # UARTSpeed=460800" /home/pi/MMDVMHost/MMDVM.ini
