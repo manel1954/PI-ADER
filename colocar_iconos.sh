@@ -34,5 +34,7 @@ cp /home/pi/PI-ADER/Desktop/*.* /home/pi/Desktop
 
 
 
-cp /home/pi/icons.screen0-1904x1064.rc /home/pi/.config/xfce4/desktop
+#cp /home/pi/icons.screen0-1904x1064.rc /home/pi/.config/xfce4/desktop
+
+cp /home/pi/icons.screen0-1904x1037.rc /home/pi/.config/xfce4/desktop
 xfdesktop --reload                              
