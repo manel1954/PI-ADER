@@ -26,7 +26,7 @@ echo "        Esperar a que se reorganicen los iconos"
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
 cp /home/pi/PI-ADER/Desktop/*.* /home/pi/Escritorio
-#sudo chmod 777 -R /home/pi/Desktop
+sudo chmod 777 -R /home/pi/Escritorio
 
 
 # AÑADIDO PROVISIONALMENTE
