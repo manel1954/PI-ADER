@@ -35,6 +35,6 @@ sudo chmod 777 -R /home/pi/Desktop
 
 
 # cp /home/pi/icons.screen0-1904x1064.rc /home/pi/.config/xfce4/desktop
-cp /home/pi/icons.screen.latest.rc /home/pi/.config/xfce4/desktop
+cp /home/pi/icons.screen0-1904x1037.rc /home/pi/.config/xfce4/desktop
 
-xfdesktop --reload                              
+sudo xfdesktop --reload                              
