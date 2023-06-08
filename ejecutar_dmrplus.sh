@@ -26,7 +26,7 @@ sudo rm /home/pi/RXF_DMRPLUS.desktop
 #Escribe en el fichero INFO_NXDN para poner los datos en los iconos INFO TXF  
 sed -i "2c $frecuencia" /home/pi/INFO_RXF
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi
 sudo sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sh cerrar_dmrplus.sh'" /home/pi/Abrir_MMDVMPLUS.desktop
