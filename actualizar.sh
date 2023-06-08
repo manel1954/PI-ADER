@@ -1,5 +1,8 @@
 ﻿#!/bin/bash
-
+panelbm=$(awk "NR==18" /home/pi/status.ini)
+if [ "$panelbm" = 'BM=OFF' ];then
+/home/pi/PI-ADER/qt/./qt_panel_bm
+fi
 
 dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$dvswitch" = 'DVSWITCH=OFF' ];then
