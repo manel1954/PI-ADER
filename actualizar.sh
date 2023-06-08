@@ -28,8 +28,7 @@ fi
 usuario="/home/pi"
 usuario="$usuario"
 SCRIPTS_version="PI-ADER"
-actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
-
+actualizacion=$(awk "NR==2" /home/pi/version-fecha-actualizacion)
 version="PI-ADER"
 version=$version$actualizacion
 
