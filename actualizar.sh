@@ -1,5 +1,5 @@
 ﻿#!/bin/bash
-panelbm=$(awk "NR==18" /home/pi/status.ini)
+panelbm=$(awk "NR==1" /home/pi/paneles_activos.ini)
 if [ "$panelbm" = 'BM=OFF' ];then
 /home/pi/PI-ADER/qt/./qt_panel_bm
 fi
