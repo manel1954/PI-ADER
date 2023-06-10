@@ -10,16 +10,16 @@ MARRON="\33[38;5;138m"
 NEGRO="\33[0;30m"
 clear
 echo -n "${AMARILLO}"
-echo "**********************************************"
+echo "*********************************************************"
 echo "    Esperar a que se reorganicen los iconos   "
-echo "**********************************************"
+echo "********************************************************"
 cd /home/pi/Desktop
 sudo rm *.desktop
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
-cp -f /home/pi/PI-ADER/Desktop/*.desktop /home/pi/Desktop
+cp /home/pi/PI-ADER/Desktop/*.desktop /home/pi/Desktop
 sudo chmod 777 -R /home/pi/Desktop
 
-sudo cp -f /home/pi/icons.screen0-1904x1017.rc /home/pi/.config/xfce4/desktop
+sudo cp /home/pi/icons.screen0-1904x1017.rc /home/pi/.config/xfce4/desktop
 sudo chmod 777 -R /home/pi/.config/xfce4/desktop
 xfdesktop --reload                              
