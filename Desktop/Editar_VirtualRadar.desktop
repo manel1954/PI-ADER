@@ -2,7 +2,7 @@
 Encoding=UTF-8
 TryExec=lxterminal
 Exec=ls
-Icon=/home/pi/PI-ADER/ICO_EDITOR_VIRTUALRADAR.png
+Icon=/home/pi/PI-ADER/ICONO_TRANSPARENTE.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

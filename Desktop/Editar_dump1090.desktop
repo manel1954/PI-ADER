@@ -2,11 +2,11 @@
 Encoding=UTF-8
 TryExec=lxterminal
 Exec=ls
-Icon=/home/pi/PI-ADER/ICO_EDITOR_RADIO.png
+Icon=/home/pi/PI-ADER/ICONO_TRANSPARENTE.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Editar Dump1090
+Name[es_ES]=.
 Hidden=false
 Comment[es_ES]=.
