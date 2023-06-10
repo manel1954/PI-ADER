@@ -23,8 +23,8 @@ echo -n "${AMARILLO}"
 #sudo rm /home/pi/*.desktop
 #sudo chmod 777 -R /home/pi/Desktop 
 echo "    Esperar a que se reorganicen los iconos"
-
-sudo rm *.desktop /home/pi/Desktop
+cd /home/pi/Desktop
+sudo rm *.desktop
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
 cp -f /home/pi/PI-ADER/Desktop/*.desktop /home/pi/Desktop
