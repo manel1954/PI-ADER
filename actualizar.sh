@@ -1,12 +1,5 @@
 ﻿#!/bin/bash
 
-cd /home/pi/PI-ADER/qt
-./qt_paneles_activar_desactivar
-
-
-
-
-
 dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$dvswitch" = 'DVSWITCH=OFF' ];then
 sudo systemctl stop ysfgateway.service
@@ -253,7 +246,7 @@ sudo rm /home/pi/Desktop/st-data
 
 panelbm=$(awk "NR==1" /home/pi/paneles_activos.ini)
 if [ "$panelbm" = 'BM=OFF' ];then
-cd/home/pi/PI-ADER/qt/
+cd /home/pi/PI-ADER/qt/
 ./qt_panel_bm
 else
 echo "no hace nada"  
