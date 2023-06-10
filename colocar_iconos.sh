@@ -9,20 +9,10 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 NEGRO="\33[0;30m"
 clear
-echo ""
 echo -n "${AMARILLO}"
-# recupera los iconos pero no los que se han quedado con e icono de un libro
-# y quita los semaforos que se queden encendidos por error al reiniciar
-#cp /home/pi/Desktop/*.desktop /home/pi
-#cp /home/pi/PI-ADER/Desktop/*.desktop /home/pi/Desktop
-#
-#cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
-#xfdesktop --reload
-#
-#cp /home/pi/*.desktop /home/pi/Desktop
-#sudo rm /home/pi/*.desktop
-#sudo chmod 777 -R /home/pi/Desktop 
-echo "    Esperar a que se reorganicen los iconos"
+echo "**********************************************"
+echo "    Esperar a que se reorganicen los iconos   "
+echo "**********************************************"
 cd /home/pi/Desktop
 sudo rm *.desktop
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
@@ -30,9 +20,6 @@ sudo rm *.desktop
 cp -f /home/pi/PI-ADER/Desktop/*.desktop /home/pi/Desktop
 sudo chmod 777 -R /home/pi/Desktop
 
-#sudo cp -f /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
-#sudo chmod 777 -R /home/pi/.config/xfce4/desktop
-#xfdesktop --reload 
 sudo cp -f /home/pi/icons.screen0-1904x1017.rc /home/pi/.config/xfce4/desktop
 sudo chmod 777 -R /home/pi/.config/xfce4/desktop
 xfdesktop --reload                              
