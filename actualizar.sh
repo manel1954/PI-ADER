@@ -246,8 +246,8 @@ sudo rm /home/pi/Desktop/st-data
 
 
 cd /home/pi/PI-ADER/qt/
-./qt_panel_bm
+./qt_panel_bm &
 
-./qt_panel_dmrplus
+./qt_panel_dmrplus &
 
-./qt_panel_radio
+./qt_panel_radio &
