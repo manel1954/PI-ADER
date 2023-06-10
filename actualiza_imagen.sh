@@ -14,6 +14,7 @@ MARRON="\33[38;5;138m"
                         echo "${AMARILLO}"                        
                         cd /home/pi/PI-ADER                       
                         git pull
+                        clear
                         sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
                         sleep 3
                         mv qt_* /home/pi/PI-ADER/qt
