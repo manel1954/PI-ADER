@@ -4,6 +4,21 @@ if [ "$panelbm" = 'BM=OFF' ];then
 /home/pi/PI-ADER/qt/./qt_panel_bm
 fi
 
+paneldmrplus=$(awk "NR==2" /home/pi/paneles_activos.ini)
+if [ "$paneldmrplus" = 'DMRPLUS=OFF' ];then
+/home/pi/PI-ADER/qt/./qt_panel_dmrplus
+fi
+
+panelradio=$(awk "NR==3" /home/pi/paneles_activos.ini)
+if [ "$panelradio" = 'RADIO=OFF' ];then
+/home/pi/PI-ADER/qt/./qt_panel_radio
+fi
+
+
+
+
+
+
 dvswitch=$(awk "NR==18" /home/pi/status.ini)
 if [ "$dvswitch" = 'DVSWITCH=OFF' ];then
 sudo systemctl stop ysfgateway.service
