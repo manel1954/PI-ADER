@@ -13,13 +13,12 @@ MARRON="\33[38;5;138m"
                         clear
                         echo "${AMARILLO}"                        
                         cd /home/pi/PI-ADER                       
-                        git pull
-                        clear
-                        #sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
+                        git pull                      
+                        sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
                         sleep 1
                         mv qt_* /home/pi/PI-ADER/qt
                         chmod 777 -R /home/pi/PI-ADER/qt
-                        sleep 10
+
 
 
 
