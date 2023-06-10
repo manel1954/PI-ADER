@@ -1,21 +1,24 @@
 ﻿#!/bin/bash
 panelbm=$(awk "NR==1" /home/pi/paneles_activos.ini)
 if [ "$panelbm" = 'BM=OFF' ];then
-/home/pi/PI-ADER/qt/./qt_panel_bm
+cd/home/pi/PI-ADER/qt/
+./qt_panel_bm
 else
 echo "no hace nada"  
 fi
 
 paneldmrplus=$(awk "NR==2" /home/pi/paneles_activos.ini)
 if [ "$paneldmrplus" = 'DMRPLUS=OFF' ];then
-/home/pi/PI-ADER/qt/./qt_panel_dmrplus
+cd /home/pi/PI-ADER/qt/
+./qt_panel_dmrplus
 else
 echo "no hace nada"  
 fi
 
 panelradio=$(awk "NR==3" /home/pi/paneles_activos.ini)
 if [ "$panelradio" = 'RADIO=OFF' ];then
-/home/pi/PI-ADER/qt/./qt_panel_radio
+cd /home/pi/PI-ADER/qt/
+./qt_panel_radio
 else
 echo "no hace nada"  
 fi
