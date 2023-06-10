@@ -251,7 +251,7 @@ cd /home/pi/PI-ADER/qt/
 else
 echo "no hace nada"  
 fi
-
+sleep 2
 paneldmrplus=$(awk "NR==2" /home/pi/paneles_activos.ini)
 if [ "$paneldmrplus" = 'DMRPLUS=OFF' ];then
 cd /home/pi/PI-ADER/qt/
@@ -259,7 +259,7 @@ cd /home/pi/PI-ADER/qt/
 else
 echo "no hace nada"  
 fi
-
+sleep 2
 panelradio=$(awk "NR==3" /home/pi/paneles_activos.ini)
 if [ "$panelradio" = 'RADIO=OFF' ];then
 cd /home/pi/PI-ADER/qt/
