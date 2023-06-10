@@ -1,6 +1,7 @@
 ﻿#!/bin/bash
 
-
+cd /home/pi/PI-ADER/qt
+./qt_paneles_activar_desactivar
 
 
 
