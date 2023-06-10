@@ -22,19 +22,31 @@ echo -n "${AMARILLO}"
 #cp /home/pi/*.desktop /home/pi/Desktop
 #sudo rm /home/pi/*.desktop
 #sudo chmod 777 -R /home/pi/Desktop 
-echo "        Esperar a que se reorganicen los iconos"
+echo "    xxxxxxxEsperar a que se reorganicen los iconos"
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
+echo "pausa sigiente comando: cp /home/pi/PI-ADER/Desktop/* /home/pi/Desktop"
+read a
 cp /home/pi/PI-ADER/Desktop/* /home/pi/Desktop
+echo "pausa sigiente comando: sudo chmod 777 -R /home/pi/Desktop"
+read a
 sudo chmod 777 -R /home/pi/Desktop
+
 
 
 # AÑADIDO PROVISIONALMENTE
 # sh clonando_carpeta_qt.sh
-
+echo "pausa sigiente comando: sudo cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop"
+read a
 
 
 # cp /home/pi/icons.screen0-1904x1064.rc /home/pi/.config/xfce4/desktop
 sudo cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
+echo "pausa sigiente comando: sudo chmod 777 -R /home/pi/.config/xfce4/desktop"
+
+read a
+
 sudo chmod 777 -R /home/pi/.config/xfce4/desktop
+echo "pausa sigiente comando: xfdesktop --reload"
+read a
 xfdesktop --reload                              
