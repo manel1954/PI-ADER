@@ -27,11 +27,9 @@ echo "    Esperar a que se reorganicen los iconos"
 
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
 # pero no quita los semaforos que se queden encendidos por error al reiniciar
-cp /home/pi/PI-ADER/Desktop/*.desktop /home/pi/Desktop
-
-
-
+cp -f /home/pi/PI-ADER/Desktop/*.desktop /home/pi/Desktop
 sudo chmod 777 -R /home/pi/Desktop
-sudo cp /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
+
+sudo cp -f /home/pi/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
 sudo chmod 777 -R /home/pi/.config/xfce4/desktop
 xfdesktop --reload                              
