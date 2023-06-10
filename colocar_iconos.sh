@@ -10,9 +10,9 @@ MARRON="\33[38;5;138m"
 NEGRO="\33[0;30m"
 clear
 echo -n "${AMARILLO}"
-echo "*********************************************************"
-echo "    Esperar a que se reorganicen los iconos   "
-echo "********************************************************"
+echo "***********************************************************"
+echo "         ESPERAR A QUE SE REORGANICEN LOS ICONOS          "
+echo "***********************************************************"
 cd /home/pi/Desktop
 sudo rm *.desktop
 # recupera los iconos que se han borrado y se han convertido en icono de un libro
