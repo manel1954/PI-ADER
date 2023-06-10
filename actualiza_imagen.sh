@@ -16,10 +16,10 @@ MARRON="\33[38;5;138m"
                         git pull
                         clear
                         #sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
-                        sleep 3
+                        sleep 1
                         mv qt_* /home/pi/PI-ADER/qt
                         chmod 777 -R /home/pi/PI-ADER/qt
-                        sleep 5
+                        sleep 10
 
 
 
