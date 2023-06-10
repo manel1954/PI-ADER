@@ -261,3 +261,9 @@ if [ "$panelradio" = 'RADIO=OFF' ];then
 cd /home/pi/PI-ADER/qt/
 ./qt_panel_radio &  
 fi
+
+panelespecial=$(awk "NR==4" /home/pi/paneles_activos.ini)
+if [ "$panelespecial" = 'ESPECIAL=OFF' ];then
+cd /home/pi/PI-ADER/qt/
+./qt_panel_especial &  
+fi
