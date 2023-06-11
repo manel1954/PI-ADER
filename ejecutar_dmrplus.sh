@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo killall qt_editor_dmrplus
+sudo killall -9 qt_editor_dmrplus
 
 mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMPLUS.ini`
 buscar=":"
@@ -38,7 +38,7 @@ sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
 sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 
 cd /home/pi/MMDVMHost
-xterm -geometry 88x16+22+665 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_DMR+ -e sudo ./MMDVMPLUS MMDVMPLUS.ini
+xterm -geometry 88x16+648+665 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_DMR+ -e sudo ./MMDVMPLUS MMDVMPLUS.ini
 
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi
