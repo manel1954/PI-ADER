@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo killall -9 qt_editor_mrplus
 
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi
