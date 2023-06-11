@@ -15,4 +15,4 @@ sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 
- 
+  

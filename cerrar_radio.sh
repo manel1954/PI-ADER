@@ -1,9 +1,10 @@
 #!/bin/bash
-sudo killall MMDVMHost
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+sudo killall -9 qt_editor_radio
+sudo killall -9 MMDVMHost
 cd /home/pi/Desktop
 sudo cp Abrir_Radio.desktop /home/pi
 
+SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version;sh ejecutar_radio.sh'" /home/pi/Abrir_Radio.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICO_RADIO_OFF.png" /home/pi/Abrir_Radio.desktop
 sed -i "10c Name[es_ES]=Abrir DMO" /home/pi/Abrir_Radio.desktop
