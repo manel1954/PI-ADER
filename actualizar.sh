@@ -287,7 +287,7 @@ cd /home/pi/PI-ADER/qt/
 fi
 
 paneldmr2ysf=$(awk "NR==8" /home/pi/paneles_activos.ini)
-if [ "$paneldmr2ysf" = 'DMRYSF=OFF' ];then
+if [ "$paneldmr2ysf" = 'DMR2YSF=OFF' ];then
 cd /home/pi/PI-ADER/qt/
 ./qt_panel_dmr2ysf &  
 fi
