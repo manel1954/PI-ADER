@@ -1,4 +1,7 @@
 #!/bin/bash
+
+sudo killall qt_editor_radio
+
 mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVM.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
