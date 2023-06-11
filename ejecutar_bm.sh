@@ -39,6 +39,7 @@ sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
 cd /home/pi/MMDVMHost
 xterm -geometry 88x16+22+665 -bg brown -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_BRANDMEISTER -e sudo ./MMDVMBM MMDVMBM.ini
+
 cd /home/pi/Desktop
 sudo cp Abrir_MMDVMBM.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sh ejecutar_bm.sh'" /home/pi/Abrir_MMDVMBM.desktop
