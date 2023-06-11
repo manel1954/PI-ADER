@@ -11,7 +11,6 @@ sed -i "6c MMDVMPLUS=OFF" /home/pi/status.ini
 
 cd /home/pi
 sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
-
 sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 
 sudo killall -9 MMDVMPLUS 
