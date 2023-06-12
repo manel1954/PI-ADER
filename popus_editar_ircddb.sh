@@ -22,7 +22,6 @@ echo "   *                                                                      
 echo "   * ${ROJO}                  IMPORTANTE!!! NO LA CIERRE ANTES                              ${BLANCO}*"
 echo "   * ${BLANCO}                                                                                *"
 echo "   ***********************************************************************************"
-echo ""
 
 #abre el editor ircDDB
 sudo ircddbgatewayconfig
