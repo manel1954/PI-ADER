@@ -37,7 +37,7 @@ sudo rm /home/pi/RXF_DSTAR.desktop
 sed -i "5c $frecuencia" /home/pi/INFO_RXF
 # FIN Escribe en el fichero INFO_RXF para poner los datos del icono INFO TXF 
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+
 cd /home/pi/Desktop
 
 sudo cp Abrir_solodstar.desktop /home/pi
