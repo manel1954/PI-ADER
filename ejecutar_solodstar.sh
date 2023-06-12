@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo killall -9 MMDVMSTAR
+sudo killall -9 MMDVMDSTAR
 
 SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 #Colores
@@ -68,7 +68,7 @@ sed -i "62c Enable=0" /opt/MMDVM_Bridge/brandmeister_esp.ini
 sed -i "62c Enable=0" /opt/MMDVM_Bridge/dmrplus.ini
 sed -i "62c Enable=0" /opt/MMDVM_Bridge/especial.ini
 
-sudo systemctl stop ircddbgateway.service
+sudo systemctl stop ircddbgatewayd.service
 
 # Ejecuta Solo D-STAR
 cd /home/pi/MMDVMHost
