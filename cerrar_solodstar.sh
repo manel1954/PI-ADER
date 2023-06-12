@@ -2,7 +2,7 @@
 sudo killall MMDVMDSTAR
 sudo killall ircddbgateway
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 
 # Cierra el icono Abrir Solo Dstar si no hay conexión 
 cd /home/pi/Desktop
