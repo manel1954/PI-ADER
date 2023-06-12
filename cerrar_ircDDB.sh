@@ -5,7 +5,7 @@ sudo killall ircddbgateway
 #cierra remotecontrol
 sudo killall remotecontrol
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 #cierra Abrir_ircDDBGateway.desktop y quita icono verde de "cerrar ircDDB"  
 cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
