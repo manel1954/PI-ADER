@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo killall -9 MMDVMSTAR
+
 SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 #Colores
 ROJO="\033[1;31m"
