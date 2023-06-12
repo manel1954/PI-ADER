@@ -20,7 +20,7 @@ echo "   *                                                                      
 echo "   *    Esta ventana se cerrará sola cuando termine de editar el ircDDB              *"
 echo "   *                                                                                 *"
 echo "   * ${ROJO}                  IMPORTANTE!!! NO LA CIERRE ANTES                             ${BLANCO}*"
-echo "   * ${BLANCO}                                                                      *"
+echo "   * ${BLANCO}                                                                                *"
 echo "   **********************************************************************************"
 echo ""
 
