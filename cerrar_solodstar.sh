@@ -44,4 +44,4 @@ else
 echo "no hace nada"
 fi
 
-
+sudo killall -9 MMDVMDSTAR
