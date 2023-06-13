@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo killall -9 qt_editor_solofusion
+
 mode=`grep -n -m 1 "^UARTPort=" /home/pi/MMDVMHost/MMDVMFUSION.ini`
 buscar=":"
 caracteres=`expr index $mode $buscar`
@@ -19,10 +21,10 @@ sudo cp /home/pi/RXF_SOLOFUSION.desktop /home/pi/Desktop
 
 sudo rm /home/pi/RXF_SOLOFUSION.desktop
 
-#Escribe en el fichero INFO_RXF para poner los datos en el icono INFO TXF                         
+#Escribe en el fichero INFO_RXF para poner los datos en el icono INFO TXF                          
 sed -i "6c $frecuencia" /home/pi/INFO_RXF
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_solofusion.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sh cerrar_solofusion.sh'" /home/pi/Abrir_solofusion.desktop

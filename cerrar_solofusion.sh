@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo killall MMDVMFUSION
 sudo killall YSFGateway
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_solofusion.desktop /home/pi
 
