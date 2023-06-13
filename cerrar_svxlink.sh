@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo killall svxlink
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+sudo killall -9 svxlink
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_svxlink.desktop /home/pi
 
