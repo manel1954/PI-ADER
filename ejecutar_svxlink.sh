@@ -1,6 +1,4 @@
 #!/bin/bash
-SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
-
 #Colores 
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
@@ -10,6 +8,7 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_svxlink.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sudo sh cerrar_svxlink.sh'" /home/pi/Abrir_svxlink.desktop
