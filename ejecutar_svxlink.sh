@@ -30,7 +30,6 @@ sleep 2
 xterm -geometry 88x17+1274+665 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_SVXLINK -e sudo svxlink
 
 
-
 cd /home/pi/Desktop
 sudo cp Abrir_svxlink.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sudo sh ejecutar_svxlink.sh'" /home/pi/Abrir_svxlink.desktop
