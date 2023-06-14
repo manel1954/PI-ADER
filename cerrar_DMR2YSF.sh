@@ -13,7 +13,7 @@ MARRON="\33[38;5;138m"
 
 
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_DMR2YSF.desktop /home/pi
 

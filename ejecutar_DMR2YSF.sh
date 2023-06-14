@@ -31,7 +31,7 @@ sudo rm /home/pi/RXF_DMR2YSF.desktop
 #Escribe en el fichero INFO_RXF para poner los datos en los iconos INFO TXF
 sed -i "14c $frecuencia" /home/pi/INFO_RXF
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_DMR2YSF.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sudo sh cerrar_DMR2YSF.sh'" /home/pi/Abrir_DMR2YSF.desktop
