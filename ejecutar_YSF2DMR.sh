@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo killall -9 qt_editor_ysf2dmr
+
 #Colores 
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
@@ -30,7 +32,7 @@ sudo rm /home/pi/RXF_YSF2DMR.desktop
 #Escribe en el fichero INFO_RXF para poner los datos en los iconos INFO TXF   
 sed -i "13c $frecuencia" /home/pi/INFO_RXF
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_YSF2DMR.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version/;sudo sh cerrar_YSF2DMR.sh'" /home/pi/Abrir_YSF2DMR.desktop
