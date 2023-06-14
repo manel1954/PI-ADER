@@ -22,7 +22,7 @@ sudo rm /home/pi/RXF_NXDN.desktop
 #Escribe en el fichero INFO_NXDN para poner los datos en los iconos INFO TXF  
 sed -i "17c $frecuencia" /home/pi/INFO_RXF
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion) 
 cd /home/pi/Desktop
 sudo cp Abrir_NXDN.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version;sudo sh cerrar_NXDN.sh'" /home/pi/Abrir_NXDN.desktop
