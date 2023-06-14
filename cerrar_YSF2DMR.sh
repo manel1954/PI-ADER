@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo killall MMDVMFUSION
-sudo killall YSF2DMR
+sudo killall -9 MMDVMFUSION
+sudo killall -9 YSF2DMR
 SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_YSF2DMR.desktop /home/pi
