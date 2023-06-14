@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sudo killall NXDNGateway
-sudo killall MMDVMNXDN
+sudo killall -9 NXDNGateway
+sudo killall -9 MMDVMNXDN
 SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_NXDN.desktop /home/pi
@@ -15,3 +15,4 @@ cd /home/pi
 sudo cp Abrir_NXDN.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_NXDN.desktop
+ 
