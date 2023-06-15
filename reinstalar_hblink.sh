@@ -34,7 +34,7 @@ sudo apt install python3-twisted
 echo "${BLANCO}"
 sudo apt install python3-bitarray
 sudo apt install python3-dev
-git clone https://github.com/lz5pn/HBlink3
+sudo git clone https://github.com/lz5pn/HBlink3
 sudo mv /opt/HBlink3/ /opt/backup/
 sudo mv /opt/backup/HBlink3/ /opt/
 sudo mv /opt/backup/HBmonitor/ /opt/
