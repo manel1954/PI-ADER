@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=ls
+Exec=sh -c 'cd /home/pi/PI-ADER/qt;./qt_paneles_activar_desactivar'
 Icon=/home/pi/PI-ADER/ICONO_TRANSPARENTE.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=.
+Name[es_ES]=Abrir Paneles Sistemas
 Hidden=false
 Comment[es_ES]=.
