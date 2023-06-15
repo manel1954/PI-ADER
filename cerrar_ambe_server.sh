@@ -1,5 +1,5 @@
 #!/bin/bash
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_ambe_server.desktop /home/pi
 sleep 1
@@ -13,7 +13,7 @@ sudo cp Abrir_ambe_server.desktop /home/pi/Desktop
 sleep 1
 sudo rm /home/pi/Abrir_ambe_server.desktop
 
-sudo killall AMBEserver
+sudo killall -9 AMBEserver
 
 				
 						

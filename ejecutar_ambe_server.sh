@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion) 
 cd /home/pi/Desktop
 sudo cp Abrir_ambe_server.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ambe_server.sh'" /home/pi/Abrir_ambe_server.desktop
