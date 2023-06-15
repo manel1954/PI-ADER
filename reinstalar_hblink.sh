@@ -26,7 +26,7 @@ sudo apt update -y
 sudo apt install python3-distutils
 
 cd /opt/
-wget https://bootstrap.pypa.io/get-pip.py
+sudo wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
 
 echo "${CIAN}"
