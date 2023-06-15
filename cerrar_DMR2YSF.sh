@@ -1,6 +1,5 @@
 #!/bin/bash
-sudo killall DMR2YSF
-sudo killall YSFGateway
+
 
 #Colores
 ROJO="\033[1;31m"
@@ -26,3 +25,5 @@ cd /home/pi
 sudo cp Abrir_DMR2YSF.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_DMR2YSF.desktop
+sudo killall -9 DMR2YSF
+sudo killall -9 YSFGateway
