@@ -11,8 +11,8 @@ cp ABRIR_DMR2M17.desktop /home/pi/Desktop
 
 sudo rm /home/pi/ABRIR_DMR2M17.desktop
 
-sudo killall DMR2M17
-sudo killall MMDVMDMR2M17
+sudo killall -9 DMR2M17
+sudo killall -9 MMDVMDMR2M17
 
 
 
