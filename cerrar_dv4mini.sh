@@ -1,8 +1,8 @@
 #!/bin/bash
 sudo su | ps aux | grep dv4mini.exe | grep -v grep | awk '{print $2}' | xargs kill
-sudo killall dv_serial
-sudo killall python
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+sudo killall -9 dv_serial
+sudo killall -9 python
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 sudo cp Abrir_dv4mini.desktop /home/pi
 sleep 1
