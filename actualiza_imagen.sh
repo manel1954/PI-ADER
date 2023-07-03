@@ -11,7 +11,7 @@ MARRON="\33[38;5;138m"
                         clear
                         echo "${AMARILLO}"
                         cd /home/pi/PI-ADER   
-                        xterm -geometry 88x10+652+138 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_DMR+ -e git pull                  
+                        xterm -geometry 88x7+652+138 -bg black -fg white -fa ‘verdana’ -fs 9x -T CONSOLA_DMR+ -e git pull                  
                         #git pull                      
                         sh /home/pi/PI-ADER/ejecutar_ImagenActualizada.sh &
                         mv qt_* /home/pi/PI-ADER/qt
