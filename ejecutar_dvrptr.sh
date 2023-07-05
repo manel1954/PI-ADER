@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
+SCRIPTS_version=$(awk "NR==3" /home/pi/version-fecha-actualizacion)
 cd /home/pi/Desktop
 cp Abrir_Dvrptr.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_dvrptr.sh'" /home/pi/Abrir_Dvrptr.desktop
