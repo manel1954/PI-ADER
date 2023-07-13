@@ -28,7 +28,7 @@ usuario="/home/pi"
 usuario="$usuario"
 SCRIPTS_version="PI-ADER"
 actualizacion=$(awk "NR==2" /home/pi/version-fecha-actualizacion)
-version="PI-ADER"
+version="SYSTEM"
 version=$version$actualizacion
 
 #pone todos los status de inicio en OFF
